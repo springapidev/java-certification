@@ -5,19 +5,19 @@ package com.coderbd.ex42;
  */
 public class InstanceOfOperator {
     public static void main(String[] args) {
-        System.out.println("Ref is Employee and Constructor is Employee ");
+        System.out.println("Ref is Animal and Constructor is Animal ");
         Employee em=new Employee();
         doSomething(em);
 
 
     /*
 
-        System.out.println("Ref is Employee and Constructor is Manager");
-        Employee e2=new Manager();
+        System.out.println("Ref is Animal and Constructor is Manager");
+        Animal e2=new Manager();
         doSomething(e2);
 
-        System.out.println("Ref is Employee and Constructor is Engineer");
-        Employee e3=new Engineer();
+        System.out.println("Ref is Animal and Constructor is Engineer");
+        Animal e3=new Engineer();
         doSomething(e3);
 
         System.out.println("Ref is Manager and Constructor is Manager");
@@ -36,7 +36,7 @@ public class InstanceOfOperator {
         }else if(e instanceof Engineer){
             System.out.println("Engineer");
         }else {
-            System.out.println("Employee");
+            System.out.println("Animal");
         }
     }
 }
