@@ -2,7 +2,7 @@ package com.coderbd.ex63.comparator;
 
 import com.coderbd.ex62.comparable.*;
 
-public class Student implements Comparable{
+public class Student{
 private String firstName, lastName;
 int studentID=0;
 double GPA=0.0;
@@ -35,15 +35,5 @@ double GPA=0.0;
 
    
 
-    @Override
-    public int compareTo(Object o) {
-        double f=GPA - ((Student)o).GPA;
-        if(f == 0.0 )
-            return 0;
-        else if (f <0.0)
-            return -1;
-        else 
-            return 1;
-    }
     
 }
