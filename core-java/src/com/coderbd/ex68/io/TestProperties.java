@@ -9,7 +9,7 @@ import java.util.Properties;
 public class TestProperties {
     public static void main(String[] args) {
         Properties pros=System.getProperties();
-       // pros.list(System.out);
+        pros.list(System.out);
         
         
         //
