@@ -15,11 +15,12 @@ public class Uncle implements Runnable {
             if (i == 50) {
                 break;
             }
-           /* try {
+            try {
+            
                 Thread.sleep(1);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Uncle.class.getName()).log(Level.SEVERE, null, ex);
-            }*/
+            }
         }
     }
 }
