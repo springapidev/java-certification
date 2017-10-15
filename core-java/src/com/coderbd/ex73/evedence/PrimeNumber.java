@@ -1,4 +1,4 @@
-package com.coderbd.ex72.evedence;
+package com.coderbd.ex73.evedence;
 import java.util.*;
 
 public class PrimeNumber {
