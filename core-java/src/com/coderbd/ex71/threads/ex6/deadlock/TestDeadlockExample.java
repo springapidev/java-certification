@@ -1,9 +1,8 @@
 package com.coderbd.ex71.threads.ex6.deadlock;
 
-/**
- *
- * @author J2EE-33
- */
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class TestDeadlockExample {
 
     public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class TestDeadlockExample {
                     System.out.println("Thread 1: locked resource 1");
 
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(1000);
                     } catch (Exception e) {
                     }
 
@@ -34,7 +33,7 @@ public class TestDeadlockExample {
                     System.out.println("Thread 2: locked resource 2");
 
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(1000);
                     } catch (Exception e) {
                     }
 
@@ -46,6 +45,11 @@ public class TestDeadlockExample {
         };
 
         t1.start();
+        try {
+            t1.join(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(TestDeadlockExample.class.getName()).log(Level.SEVERE, null, ex);
+        }
         t2.start();
     }
 }
@@ -54,5 +58,5 @@ public class TestDeadlockExample {
  * situation when a thread is waiting for an object lock, that is acquired by
  * another thread and second thread is waiting for an object lock that is
  * acquired by first thread. Since, both threads are waiting for each other to
- * release the lock, the condition is called deadlock. Deadlock in java
+ * release the lock, the condition is called deadlock.
  */

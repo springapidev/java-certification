@@ -10,7 +10,7 @@ public static void main(String [] args){
         arr[2] = sc.nextInt();
         arr[3] = sc.nextInt();
         arr[4] = sc.nextInt();
-    System.out.println("Min Number: "+arr);
+    System.out.println("Min Number: "+getMinValue(arr));
 }
 public static int getMinValue(int[] array) {
     int minValue = array[0];
