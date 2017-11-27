@@ -1,5 +1,4 @@
 package com.coderbd.day3;
-
 /**
  *
  *  @author Mohamamd Rajaul Islam
@@ -31,6 +30,13 @@ public class ArrayEx1 {
         //Array index out of bound exception
        //  System.out.println("items of index 0: " + items[3]);
        
-       
+       //array
+        int[] arr=new int[5];
+        arr[0]=55;
+        arr[2]=65;
+        arr[4]=75;
+        for(int num : arr){
+            System.out.println("Array Print: "+num);
+        }
     }
 }
