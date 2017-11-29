@@ -1,0 +1,37 @@
+Topic: Employee Details
+	 Employee
+		-Department
+			-Signle Object :: (id, name)
+		-EducationQualifications
+			- List :: (id, degreeName, grade, passingYear, instituteName)
+				Signle Object :: DegreeName(id, name)
+				Signle Object :: grade(id, cgpa)
+				Signle Object :: passingYear(id, year)
+				Signle Object :: instituteName(id, name)
+		-Address 
+			-Signle Object :: (id, houseNo, block, road, ps, district, addresstype)
+				- Signle Object :: addresstype(id, name)
+		-JobHistory
+			-List :: (id, designation, duration, companyName, jobType)
+				-Signle Object :: jobType(id, name)
+		-ProfessionalTrainings
+			- List :: (id, title, duration, trainingCenter)
+				-Signle Object :: trainingCenter(id, name, address)
+		-ProjectsTillNow
+			-List :: (id, title, type(Hr, Accounts, Marketing etc), status, language, framework)
+				-Signle Object :: type(id, name)
+				-Signle Object :: status(id, name)
+				-List :: language(id, name)
+				-List :: framework(id, name)
+				
+		-BankDetails
+			-List :: (id, accounHolder, accountNo, bankName)
+				-Signle Object :: bankName(id, name, address)
+					
+		-EmployeeDetails
+			-Signle Object :: (id, hobby, bloodGroup, nationality, religion)
+			-Signle Object :: bloodGroup(id, name)
+			-List :: nationality(id, name)
+			-Signle Object :: religion(id, name)
+			
+			:::Analysis is done till now::::
