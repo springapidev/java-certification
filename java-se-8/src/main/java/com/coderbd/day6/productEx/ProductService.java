@@ -8,22 +8,31 @@ import java.util.List;
  * @author Instructor
  */
 public class ProductService {
+
+    public Product displaySingleProduct(int productID) {
+        Product product = null;
+        for (Product p : getProducts()) {
+            if (p.getId() == productID) {
+                product = new Product(p.getId(), p.getProductName(), p.getQty(), p.getUnitePrice(), p.getTotalPrice(), p.getBrandName());
+            }
+        }
+        return product;
+    }
+
 //Third Method
-    public void displayProductsByBrandName(String brandName){
-    for(Product p : getProducts()){
-    if(brandName.equals(p.getBrandName())){
-        System.out.println("ID:         "+p.getId()
-        +" Product Name: "+p.getProductName()
-        +" Qty:          "+p.getQty()
-        +" Unit Price:   "+p.getUnitePrice()
-        +" Total price:  "+p.getTotalPrice()
-        +" Brand          "+p.getBrandName());
+    public void displayProductsByBrandName(String brandName) {
+        for (Product p : getProducts()) {
+            if (brandName.equals(p.getBrandName())) {
+                System.out.println("ID:         " + p.getId()
+                        + " Product Name: " + p.getProductName()
+                        + " Qty:          " + p.getQty()
+                        + " Unit Price:   " + p.getUnitePrice()
+                        + " Total price:  " + p.getTotalPrice()
+                        + " Brand          " + p.getBrandName());
+            }
+        }
     }
-    }
-    }
-    
-    
-    
+
     //Second Method
     public List<Product> getProducts() {
         List<Product> list = new ArrayList<>();
@@ -36,6 +45,7 @@ public class ProductService {
         return list;
     }
 //First Method
+
     public double calculateTotal(int qty, double unitPrice) {
         double total = unitPrice * qty;
         return total;

@@ -11,8 +11,20 @@ package com.coderbd.day6.productEx;
  */
 public class App {
     public static void main(String[] args) {
-        new ProductService().displayProductsByBrandName("Samsung");
+        //new ProductService().displayProductsByBrandName("Samsung");
+        ProductService ps=new ProductService();
+        
+        Product p=ps.displaySingleProduct(4);
+        if(p != null){
+         System.out.println("ID:         " + p.getId()
+                        + " Product Name: " + p.getProductName()
+                        + " Qty:          " + p.getQty()
+                        + " Unit Price:   " + p.getUnitePrice()
+                        + " Total price:  " + p.getTotalPrice()
+                        + " Brand          " + p.getBrandName());
+    }else{
+            System.out.println("Invalid"); 
+       }
     }
-    
     
 }
