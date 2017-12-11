@@ -35,3 +35,17 @@ Topic: Employee Details
 			-Signle Object :: religion(id, name)
 			
 			:::Analysis is done till now::::
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

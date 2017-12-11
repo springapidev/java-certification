@@ -1,10 +1,6 @@
 package com.coderbd.day5.domain;
 
-/**
- *
- * @author Instructor
- */
-//step-1 :: class declaration
+
 public class Department {
 
     //step-2 field declaration
