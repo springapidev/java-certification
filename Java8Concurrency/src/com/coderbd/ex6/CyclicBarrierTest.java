@@ -8,6 +8,7 @@ import java.util.concurrent.BrokenBarrierException;
 // The run() method in this thread should be called only when 
 // four players are ready to start the game 
 class MixedDoubleTennisGame extends Thread {
+    @Override
     public void run() {
         System.out.println("All four players ready, game starts \n Love all...");
     }
@@ -22,6 +23,7 @@ class Player extends Thread {
         waitPoint = barrier;
         this.start();
     }
+    @Override
     public void run() {
         System.out.println("Player " + getName() + " is ready ");
         try {

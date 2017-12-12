@@ -4,6 +4,7 @@ package com.coderbd.ex1;
  * @author Rajaul Islam
  */
 class MyThread extends Thread {
+    @Override
     public void run() {
         try {
             sleep(1000);
