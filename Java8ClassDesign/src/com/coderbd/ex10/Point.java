@@ -14,6 +14,7 @@ class Point {
 
     // this toString method overrides the default toString method implementation 
     // provided in the Object base class 
+    @Override
     public String toString() {
         return "x = " + xPos + ", y = " + yPos;
     }
