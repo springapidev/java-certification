@@ -22,7 +22,7 @@ public class BeforeJava8 {
                 new Student("Rashidul", 30)
         );
 
-        Student result = getStudentByName(students, "Emon");
+        Student result = getStudentByName(students, "Emonc");
         System.out.println(result);
 
     }

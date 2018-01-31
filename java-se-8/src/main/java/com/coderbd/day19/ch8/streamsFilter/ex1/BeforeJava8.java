@@ -16,7 +16,7 @@ public class BeforeJava8 {
         List<String> lines = Arrays.asList("india", "pak", "bd");
         List<String> result = getFilterOutput(lines, "pak");
         for (String temp : result) {
-            System.out.println(temp);    //output : spring, node
+            System.out.println(temp);   
         }
 
     }

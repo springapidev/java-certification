@@ -5,8 +5,6 @@
  */
 package com.coderbd.day19.comparable.ex3;
 
-import com.coderbd.day19.comparable.ex2.*;
-
 /**
  *
  * @author Rajail Islam

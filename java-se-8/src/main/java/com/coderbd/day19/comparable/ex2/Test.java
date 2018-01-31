@@ -20,8 +20,8 @@ public class Test {
         ArrayList al = new ArrayList();
         al.add(new Student(101, "Munna", 23));
         al.add(new Student(106, "Zunaid", 27));
-        al.add(new Student(105, "Rashidul", 21));
-        al.add(new Student(107, "Emon", 22));
+        al.add(new Student(105, "Rashidul", 22));
+        al.add(new Student(107, "Ramon", 22));
 
         System.out.println("Sorting by Name...");
 

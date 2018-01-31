@@ -20,7 +20,7 @@ public class NowJava8 {
                 new Student("Rashidul", 30)
         );
 
-        Student result1 = students.stream()                        // Convert to steam
+        Student result1 = students.stream()                        //List Convert to steam
                 .filter(x -> "Munna".equals(x.getName()))        // we want "Munna" only
                 .findAny()                                      // If 'findAny' then return found
                 .orElse(null);                                  // If not found, return null
