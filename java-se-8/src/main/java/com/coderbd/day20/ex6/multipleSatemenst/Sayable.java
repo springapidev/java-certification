@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.coderbd.day8.interfaces.ex4;
+package com.coderbd.day20.ex6.multipleSatemenst;
 
 /**
  *
- * @author Instructor
+ * @author Rajail Islam
  */
+public interface Sayable {
 
-public interface Dog {
-    void bark();
+    String say(String message);
 }

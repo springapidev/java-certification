@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.coderbd.day8.interfaces.ex4;
+package com.coderbd.day20.ex4.withOrWithoutReturnKeyword;
+
+import com.coderbd.day20.ex3.multipleparameters.*;
 
 /**
  *
- * @author Instructor
+ * @author Rajail Islam
  */
-
-public interface Dog {
-    void bark();
+public interface Addable {
+    int add(int a, int b);
 }
