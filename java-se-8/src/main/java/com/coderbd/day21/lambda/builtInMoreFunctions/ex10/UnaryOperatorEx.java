@@ -17,8 +17,8 @@ public class UnaryOperatorEx {
     for the case where the operand and result are of the same type. 
     */
   public static void main(String[] args) {
-    UnaryOperator<String> i  = (x)-> x.toUpperCase();
+    UnaryOperator<String> i  = (x)-> x.toLowerCase();
     
-    System.out.println(i.apply("java2s.com"));
+    System.out.println(i.apply("java2s.COM"));
   }  
 }

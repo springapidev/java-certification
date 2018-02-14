@@ -7,6 +7,6 @@ public class UniqueCharacters {
         Arrays.stream(string)
                 .flatMap(word -> Arrays.stream(word.split("")))
                 .distinct()
-                .forEach(System.out::print);
+                .forEach(System.out::println);
     }
 }

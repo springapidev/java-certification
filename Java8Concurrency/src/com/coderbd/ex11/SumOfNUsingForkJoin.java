@@ -12,7 +12,7 @@ import java.util.concurrent.ForkJoinPool;
  */
 class SumOfNUsingForkJoin {
 
-    private static long N = 1000_000; // one million - we want to compute sum 
+    private static long N = 10000000000L; // one million - we want to compute sum 
     // from 1 .. one million    
 
     private static final int NUM_THREADS = 10;

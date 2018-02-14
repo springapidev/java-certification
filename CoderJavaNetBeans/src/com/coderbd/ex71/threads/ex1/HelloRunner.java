@@ -10,7 +10,7 @@ int i;
        i=0;
         while (true) {            
             System.out.println("Hello: "+i++);  
-            if(i==50){
+            if(i==10){
                 break;
             }
             try {

@@ -6,7 +6,7 @@ public class InterConnectedTest {
         final Customer c = new Customer();
         new Thread() {
             public void run() {
-                c.withdraw(15000);
+                c.withdraw(25000);
             }
         }.start();
         new Thread() {
@@ -14,6 +14,10 @@ public class InterConnectedTest {
                 c.deposit(10000);
             }
         }.start();
-
+ new Thread() {
+            public void run() {
+                c.deposit(6000);
+            }
+        }.start();
     }
 }

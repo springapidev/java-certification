@@ -12,12 +12,12 @@ public class Uncle implements Runnable {
         i = 0;
         while (true) {
             System.out.println("Uncle: " + i++);
-            if (i == 50) {
+            if (i == 10) {
                 break;
             }
             try {
             
-                Thread.sleep(1);
+                Thread.sleep(2000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Uncle.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -20,7 +20,9 @@ public class IntToDoubleFunctionEx {
 The following example shows how to use the applyAsDouble() method of the IntToDoubleFunction 
     interface with lambda expression.
     */
+    static int $x=10;
     public static void main(String[] args) {
+        System.out.println("$x: "+$x);
 		IntToDoubleFunction function = (a) -> (a / 3d);
 
 		System.out.println(function.applyAsDouble(9));

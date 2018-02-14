@@ -15,7 +15,7 @@ public class DoubleFunctionEx {
 
     public static void main(String[] args) {
         DoubleFunction<String> function = (d) -> {
-            return "Input value is " + d;
+            return "Input value is " + (d+d);
         };
 
         System.out.println(function.apply(4.5));

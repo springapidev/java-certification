@@ -8,12 +8,13 @@ public class App {
         Uncle uncle = new Uncle();
         Thread uncleThread = new Thread(uncle);
         uncleThread.setName("Mr. Jamil");
-        uncleThread.setPriority(1);
+        uncleThread.setPriority(10);
         uncleThread.start();
+        
         Urmi u = new Urmi();
         Thread urmiThread = new Thread(u);
         urmiThread.setName("Urmi");
-        urmiThread.setPriority(10);
+        urmiThread.setPriority(1);
         urmiThread.start();
         System.out.println("uncleThread Name " + uncleThread.getName());
         System.out.println("urmiThread name " + urmiThread.getName());
