@@ -20,8 +20,7 @@ public class FlightTravel {
 
         // Arrival on the same day in 10 hours in "Auckland"
         ZonedDateTime arrival =
-                departure.withZoneSameInstant(ZoneId.of("Pacific/Auckland"))
-                .plusHours(10);
+                departure.withZoneSameInstant(ZoneId.of("Pacific/Auckland")).plusDays(2);
 
         System.out.println("Arrival: " + dateTimeFormatter.format(arrival));
     }
