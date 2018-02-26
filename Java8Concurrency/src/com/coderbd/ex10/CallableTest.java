@@ -32,7 +32,7 @@ class Factorial implements Callable<Long> {
 class CallableTest {
     public static void main(String []args) throws Exception {
         // the value for which we want to find the factorial 
-        long N = 20;
+        long N = 5;
         // get a callable task to be submitted to the executor service 
         Callable<Long> task = new Factorial(N);
         // create an ExecutorService with a fixed thread pool having one thread

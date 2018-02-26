@@ -1,5 +1,8 @@
 package com.coderbd.ex71.threads.ex2;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Urmi implements Runnable {
     int i;
     @Override
@@ -7,10 +10,15 @@ public class Urmi implements Runnable {
         i = 0;
         while (true) {
             System.out.println("Urmi: " + i++);
-            if (i == 50) {
+            if (i == 10) {
                 break;
             }
-          
+           try {
+            
+                Thread.sleep(100);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Uncle.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 }

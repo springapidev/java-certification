@@ -16,7 +16,8 @@ class UseCounter implements Runnable {
         // increments the counter and prints the value 
         // of the counter shared between threads
         Counter.count++;
-        System.out.print(Counter.count + "  ");
+               System.out.println(Thread.currentThread().getName()+" :: "+Counter.count + "  ");
+       
     }
     @Override
     public void run() {
@@ -29,13 +30,13 @@ class UseCounter implements Runnable {
 // This class creates three threads 
 public class RaceCondition {
     public static void main(String args[]) {
-        UseCounter c = new UseCounter();
+       UseCounter c = new UseCounter();
         Thread t1 = new Thread(c);
         Thread t2 = new Thread(c);
-        Thread t3 = new Thread(c);
+       // Thread t3 = new Thread(c);
         t1.start();
         t2.start();
-        t3.start();
+       // t3.start();
     }
 }
 

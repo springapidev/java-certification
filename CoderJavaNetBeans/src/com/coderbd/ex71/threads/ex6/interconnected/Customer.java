@@ -10,6 +10,15 @@ public class Customer {
             } catch (Exception e) {
             }
         }
+         if (this.amount < amount) {
+            System.out.println("Still Less balance; waiting for deposit...");
+            try {
+                wait();
+            } catch (Exception e) {
+            }
+        }
+        
+        
         this.amount -= amount;
         System.out.println("withdraw completed...");
     }
