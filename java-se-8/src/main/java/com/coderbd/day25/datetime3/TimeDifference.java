@@ -20,7 +20,7 @@ public class TimeDifference {
                                 dateTimeInSingapore.toLocalTime(),
                                 sameDateTimeInAuckland.toLocalTime());
 
-        System.out.printf("Time difference between %s and %s zones is %d hours",
+        System.out.printf("Time difference between %s and %s zones is %d hours\n",
                     singaporeZone, aucklandZone, timeDifference.toHours());
     }
 }

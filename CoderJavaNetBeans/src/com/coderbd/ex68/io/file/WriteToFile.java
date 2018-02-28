@@ -6,7 +6,7 @@ import java.io.FileWriter;
 public class WriteToFile {
 
     public static void main(String[] args) {
-        String destFile = "my_second_file.html";
+        String destFile = "my_second_file.txt";
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(destFile))) {
             bw.append("Dhaka");
             bw.newLine();

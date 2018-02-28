@@ -16,7 +16,7 @@ public class ReadFromFile {
         }
         System.out.println("lines: " + lines);
 
-        if (lines.contains("Dhakacc")) {
+        if (lines.contains("Dhaka")) {
             System.out.println("Exist");
         } else {
             System.out.println("Not Exist");
