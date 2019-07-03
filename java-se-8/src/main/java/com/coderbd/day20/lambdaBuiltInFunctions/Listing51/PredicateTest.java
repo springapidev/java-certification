@@ -11,7 +11,7 @@ public class PredicateTest {
         String helloStr = "hello";
         System.out.println(nullAndEmptyCheck.test(helloStr));//True
         System.out.println(nullCheck.test(helloStr));//True
-        System.out.println(nullCheck.test(helloStr));//True
+        System.out.println(emptyCheck.test(helloStr));//True
 
         String nullStr = null;
         System.out.println(nullAndEmptyCheck.test(nullStr));//False

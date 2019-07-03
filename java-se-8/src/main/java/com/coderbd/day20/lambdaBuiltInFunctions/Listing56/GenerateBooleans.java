@@ -6,7 +6,7 @@ import java.util.Random;
 class GenerateBooleans {
     public static void main(String []args) {
         Random random = new Random();
-         Stream.generate(random::nextBoolean)
+         Stream.generate(random::nextInt)
                   .limit(12)
                   .forEach(System.out::println);
     }
